@@ -51,7 +51,7 @@ Note that this task is accomplished perfectly in Windows and MacOS,
 by the keyboard layout compilers Microsoft's "Keyboard Layout 
 Creator" and John Brownie's "Ukelele", respectively. Until the 
 problem is solved in Linux/xkb, the user can generate that symbol 
-by pressing the key 'a" followed by the key '~'.
+by pressing the key 'a' followed by the key '~'.
 
 
 
