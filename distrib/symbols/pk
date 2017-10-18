@@ -388,9 +388,9 @@ xkb_symbols "urd-qwerty" {
    name[Group1]= "Urdu (Win-Mac-Lnx QWERTY)";
 
 // Last revised 2015-02-09
-// Contact Kamal Abdali, k.abdali@acm.org, patriot.net/~abdali/urdumac.html
+// Contact Kamal Abdali, k.abdali@acm.org, http://geomete.com/urdumac.html
 // Printable one-page Keyboard Layout for Windows/Linux is at
-//  http://www.patriot.net/users/abdali/ftp/UrduQWERTYkeyboardWin.pdf
+//  http://geomete.com/ftp/UrduQWERTYkeyboardWinLnx.pdf
 
    key <TLDE> { [  U064d,  U064b,  U0060,  U007e  ] };
 
