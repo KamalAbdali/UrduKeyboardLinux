@@ -35,9 +35,10 @@ It would require you to type in the root password.
 	mv evdev.xml evdev.xml.bak
 	mv xorg.lst xorg.lst.bak
 
-5. Place the four new files in the system. The example commands below 
+5. Place four new files in the system. The example commands below 
 assume that the files have been downloaded into a directory called 
 'UrduQWERTYlinux' and the path to 'xkb' is '/usr/share/X11/xkb'.
+
 	cd UrduQWERTY-v6linux/symbols
 	cp pk /usr/share/X11/xkb/symbols/
 	cd ../rules
@@ -45,9 +46,12 @@ assume that the files have been downloaded into a directory called
 
 6. Execute the following command to compile the changed keyboard 
 information into the system:
+
 	setxkbmap -layout pk -variant urd-qwerty -print | xkbcomp -
-   (For this command to work, you might need to be in an Xterm
-    shell window rather than a regular command window.)
+
+(For this command to work, you might need to be in an Xterm
+ shell window rather than a regular command window, and again
+ execute 'su' command first.)
 
 7. Logout and login again (or restart the machine) for the above 
 changes to take effect.
@@ -56,23 +60,33 @@ changes to take effect.
 have to change some system settings. Depending on your Linux 
 distribution (e.g., Debian, Fedora, OpenSuSE, Ubuntu) and your desktop
 environment (e.g., Gnome, KDE, Mate), this might require typing special 
-commands or, more conveniently, working with 'System Settings, 
-'Control Panel', etc. The following example is for OpenSUSE with KDE.
+commands or, more conveniently, working with 'System Settings', 
+'Control Panel', etc. 
 
-A. From the 'Application Launcher', start 'Configure Desktop'. 
-From the 'Hardware' section, select 'Input Devices'. It will display 
-the 'Keyboard - System Settings' panel. 
+The following example is for OpenSUSE with KDE.
+
+A. From the 'Application Launcher', select 'Settings', then 
+'Configure Desktop'. From the 'Hardware' section, select 
+'Input Devices'. It will display the 'Keyboard ...' panel.
+Click on 'Layout' tab.
 
 B. In the lower pane 'Configure Layouts', click on the 'Add' button, 
 and from the choices displayed, select Map 'pk', 
 Layout 'Urdu (Pakistan)', Variant 'Urdu (Win-Mac-Linux QWERTY)'.
 
-C. Click on the 'Layouts' tab. In the 'Layout indicator', select 
-'Show layout indicator' and 'Show flag'. In 'Switching Policy', 
+C. Go to the upper pane of 'Layouts' tab. In the 'Layout indicator', 
+select 'Show layout indicator' and 'Show flag'. In 'Switching Policy', 
 select 'Global'. In 'Shortcuts for Switching Layout', 
 select 'Alt+Shift' for 'Main shortcuts'. 
 (This --- to get you started --- is just one set of suitable choices 
 among several alternatives:)
 
 D. Click on 'Apply'.
+
+In the panel area you should now see a flag to indicate the active 
+keyboard layout (something resembling the Pakistani flag for 
+UrduQWERTY layout).
+
+If you have several keyboard layouts installed, then Shift-ALT 
+should toggle among them.
 
